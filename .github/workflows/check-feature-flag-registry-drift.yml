@@ -69,6 +69,7 @@ jobs:
       registry-file-path: test/e2e/feature-flags/feature-flag-registry.ts
       registry-artifact-name: updated-registry
       report-artifact-name: drift-report
+      workflow-run-url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
 
